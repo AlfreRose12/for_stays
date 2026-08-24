@@ -1,0 +1,163 @@
+.aboutme-section {
+  padding: var(--section-gap) 0;
+  background: var(--color-bg-darker);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.aboutme-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Layout Asimétrico en 2 Columnas */
+.aboutme-content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  margin-top: 36px;
+}
+
+/* Columna Izquierda: Biografía */
+.aboutme-bio-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: var(--color-bg-card);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--color-glass-border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: var(--shadow-sm);
+}
+
+.aboutme-text {
+  color: var(--color-text-muted);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.aboutme-text strong {
+  color: var(--color-text-heading);
+  font-weight: 600;
+}
+
+/* Ficha Destacada de Estadías (Badges) */
+.aboutme-badge-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: rgba(173, 255, 47, 0.04);
+  border: 1px solid var(--color-glass-border);
+  border-left: 3px solid var(--color-primary);
+  border-radius: var(--radius-lg);
+  padding: 20px 24px;
+  margin-top: 8px;
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.aboutme-badge-box:hover {
+  border-color: var(--color-border-strong);
+  box-shadow: var(--shadow-glow);
+}
+
+.badge-icon {
+  font-size: 24px;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.badge-label {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 4px;
+}
+
+.badge-dates {
+  color: var(--color-text-muted);
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Columna Derecha: Lista de Competencias */
+.aboutme-competencies-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.competency-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: var(--color-bg-card);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--color-glass-border);
+  border-radius: var(--radius-lg);
+  padding: 20px 24px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease, border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.competency-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.competency-item:hover {
+  transform: translateY(-2px);
+  border-color: rgba(173, 255, 47, 0.2);
+  box-shadow: 0 4px 24px rgba(173, 255, 47, 0.08);
+}
+
+.competency-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-md);
+  background: var(--color-primary-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.competency-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--color-text-heading);
+}
+
+.competency-description {
+  color: var(--color-text-muted);
+  font-size: 13.5px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive (Escritorio) */
+@media (min-width: 992px) {
+  .aboutme-content-wrapper {
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: start;
+    gap: 48px;
+  }
+}
+
+/* Responsive (Dispositivos Móviles) */
+@media (max-width: 480px) {
+  .aboutme-badge-box,
+  .competency-item {
+    padding: 16px 20px;
+  }
+  
+  .competency-item {
+    gap: 12px;
+  }
+}

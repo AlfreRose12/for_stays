@@ -2,11 +2,10 @@ import { useState, useEffect } from 'react'
 import './Navbar.css'
 
 const links = [
-  { href: '#filosofia', label: 'Filosofía' },
-  { href: '#servicios', label: 'Servicios' },
-  { href: '#tecnologias', label: 'Tech Stack' },
-  { href: '#entorno', label: 'Entorno' },
+  { href: '#sobre-mi', label: 'Sobre mi' },
+  { href: '#tecnologias', label: 'Tecnologías' },
   { href: '#proyectos', label: 'Proyectos' },
+  { href: '#contacto', label: 'Contacto' },
 ]
 
 export default function Navbar() {
@@ -31,7 +30,7 @@ export default function Navbar() {
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-inner">
-        <a href="#hero" className="navbar-logo">ARD</a>
+        <a href="#hero" className="navbar-logo">ARE</a>
 
         <button
           className={`navbar-toggle ${menuOpen ? 'open' : ''}`}

@@ -1,9 +1,7 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import Philosophy from './components/Philosophy'
-import Services from './components/Services'
+import AboutMe from './components/AboutMe'
 import TechStack from './components/TechStack'
-import WorkEnv from './components/WorkEnv'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -16,10 +14,8 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <Philosophy />
-        <Services />
+        <AboutMe />
         <TechStack />
-        <WorkEnv />
         <Projects />
         <Contact />
       </main>
