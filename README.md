@@ -9,9 +9,9 @@ Esta SPA (Single Page Application) sirve como punto de vinculación técnica con
 ## Secciones del sitio
 
 - **Hero** — Presentación principal y objetivos para el periodo de estadías profesionales.
-- **About me** — Perfil profesional, formación académica en la UTCV, metodologías de desarrollo, principios de arquitectura de software y trabajo en equipo.
+- **About me** — Perfil profesional, formación académica, metodologías de desarrollo, principios de arquitectura de software y trabajo en equipo.
 - **Tech Stack** — Lenguajes, frameworks, bases de datos y herramientas de desarrollo.
-- **Proyectos Realizados** — Muestra de desarrollos previos y proyectos integradores destacados (RetiScan, Speira, Odontología Integral).
+- **Proyectos Realizados** — Muestra de desarrollos previos y proyectos integradores destacados.
 - **Contacto** — Medios oficiales de comunicación directa para vinculación empresarial y seguimiento académico.
 
 ---
